@@ -1,0 +1,371 @@
+$secondary-color: #ee8899;
+$primary-color: #3a3a3c;
+$grey-dark-background: #5d5d6c;
+$grey-light-background: #e1e3e7;
+$text-dark-color: #8e8e98;
+$text-bgc-red-color:#d7b5b4;
+$store-color: #352a2a;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+.main-wrapper{
+    p::selection, h2::selection, h3::selection, span::selection, input::selection {
+        background: #eef4ff;
+        //color: $text-red-color;
+    }
+    .content{
+        //width: 960px; // ovo je sirina u photoshopu
+        margin: 0 15vw;  // treba oko 25vh
+         
+     
+    }
+    .main-top{
+        color: $primary-color;
+        background-image: url(../img/main-image.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .h2-span{
+        margin-bottom: 60px;
+        color: #fff;
+        font-weight: 300;
+        font-size: 48px;
+        #h2-bold{
+            display: block;
+            font-weight: 400;
+        }
+       
+    }
+    
+.top-content{
+    padding-top: 20px;
+    min-height: 760px;
+    
+    
+
+    .navbar-wrapper{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start;
+        .logo{
+            
+            display: inline-block;
+            font-size: 10px;
+            
+            h3{
+                color: $primary-color;
+                text-align: center;
+            }
+        }
+      
+        .top-links{
+            display: flex;
+            justify-content: flex-end;
+            flex-direction: column;
+            align-items: flex-end;
+            width: 79%;
+            .icons{
+                display: block;
+                margin-bottom: 50px;
+                font-size: 14px;
+                a{  
+                    color: $primary-color;
+                    margin-left: 16px;
+                    &:hover{
+                        color: lighten($primary-color, 10%);
+                    }
+                }
+                
+            }
+        
+            .navbar{
+                display: block;
+                font-size: 10px;
+                font-weight: 400;
+                margin-bottom: 30px;
+
+            ul{
+                
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    
+                    
+                    a{  
+                        display: inline-block;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        color: $primary-color;
+                        margin-left: 30px;
+                        
+
+                        &::after{
+                            content: '';
+                            display: block;
+                            height: 3px;
+                            margin-top: 8px; // treba 8 ili 9px
+                            background-color: $secondary-color;
+                            transform: scale(0, 0);
+                            //transform-origin: left;  //videti sta je lepse
+                            transition: transform ease .3s;
+
+                            
+                        }
+                        &:hover{
+                            color: lighten($primary-color, 20%)
+                        }
+                        &:hover::after{
+                            
+                            transform: scale(1,1);
+                        }
+                       
+
+                       
+                    }
+                }
+            }
+            
+        }
+    }
+    }
+   
+
+    .text-content{
+        margin-top: 160px;
+        
+    }
+    form.search-form{
+        
+        display: block;
+        border: 1px solid #fff;
+        background-color: rgba($grey-light-background, .5) ;
+        width: 480px;
+        border-radius: 3px;
+        input.search-input {
+            font-weight: 300;
+            font-size: 16px;
+            padding: 18px 20px;
+            width: 92%;
+            border: 0; 
+            display: inline-block;
+            background: none;
+            color: #fff;
+            &:focus {
+                color: $grey-dark-background;
+                outline: 0 
+            }
+          
+        }
+        input[type='submit'] {
+            background-color:rgba($grey-light-background, 0) ;  //nece rgbA
+            color: #fff;
+            line-height: 2;
+            font-size: 16px;
+            border:0;
+            cursor: pointer;
+            width: 20px;
+            &:hover, &:focus{
+                color: $grey-dark-background;
+                transition: all .25s ease;
+            }
+        }
+       
+
+        
+      
+        
+    }
+    
+}
+
+    #section-2{
+        background: $grey-dark-background;
+        color: #fff;
+        .text-content{
+            
+            text-align: center;
+            .text-content.text-2{
+                
+                padding-top: 32px;
+                padding-bottom: 96px;
+                .text-inner{
+                    margin-top: 30px;
+                    h3{
+                        font-size: 24px;
+                        margin-bottom: 28px;
+                        color: $text-bgc-red-color;
+                    }
+                }
+            }
+
+            .flex-container{
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 84px;
+                flex-wrap: nowrap;
+                .flex{
+                    width: 240px;
+                    text-align: center;
+                    .text-inner{
+                        margin-top: 45px;
+                        margin-bottom: 40px;
+                        h3{
+                            color: $text-dark-color;
+                            margin-bottom: 30px;
+                            font-size: 18px;
+                        }
+                        p{
+                            font-size: 18px;
+                            padding: 0 20px;
+                        }
+                    }
+                    .button{
+                        margin: 0 10px;
+                        a{
+                            display: block;
+                            height: 52px;
+                            text-decoration: none;
+                            text-transform: uppercase;
+                            text-align: center;
+                            border-radius: 4px;
+                            border: 1px solid $text-bgc-red-color;
+                            padding-top: 16px;
+                            color: #fff;
+                            
+                            &:hover, &:focus{
+                                background-color: $text-bgc-red-color;
+                                color: $grey-dark-background;
+                                transition: all .3s ease;
+                                
+                            }
+                            
+                        }
+                    }
+
+                   
+                }
+                // ne slaze se visina sa ostala dva diva ???
+                .flex.flex-content-2{
+                    .text-inner.inner-2{
+                        margin-top: 49px;
+                    }
+                    
+                } 
+                
+            }
+        }
+    }
+
+    #section-3{
+        .image-wrapper{
+            background: url(../img/section3-croped.jpg);
+            .background-image{
+                background: rgba($text-bgc-red-color, 0.93);
+                padding: 0 15vw;
+                .flex-2{
+                    display: flex;
+                    justify-content: space-between;
+                    flex-direction: row;
+                    flex-wrap: no-wrap;
+                    
+               
+                .text-content{
+                    
+                    margin-right: 20px;
+                    margin-top: 50px;
+                    margin-bottom: 80px;
+                    h2{
+                        margin-bottom: 30px;
+                    }
+                    p.main-p{
+                        color: #fff;
+                        margin-bottom: 80px;
+                    }
+
+                    .store-btn{
+                        .app-btn{
+                            display: flex;
+                            justify-content: flex-start;
+                            .store{
+                                display: flex;
+                                justify-content: flex-start;
+                                align-items: center;
+                                flex-wrap: nowrap;
+                                width: 170px;
+                                height: 60px;
+                                margin-right: 30px;
+                                background-color: $store-color;
+                                border-radius: 4px;
+                                text-decoration: none;
+                                .icon{
+                                    display: inline-block;
+                                    padding: 15px;
+                                
+                                }
+                                .store-content{
+           
+                                    display: flex;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    flex-direction: column;
+                                    color: #fff;
+                                    p{
+                                        font-size: 12px;
+                                    }
+                                    h3{
+                                        font-size: 20px;
+                                        
+                                    }
+                                }
+                            }
+                         }
+                        }
+                    }
+                    .mobile-wrapper{
+                        display: flex;
+                        justify-content: flex-end;
+                        align-items: flex-end;
+                        //position: relative;
+                        
+
+                   
+                    }
+                }
+            }
+        }
+    }
+    .separator{
+        padding-top: 40px ;
+        padding-bottom: 25px;
+    }
+    #section-4{
+        .background-content{
+            background: $grey-light-background;
+            .content{
+                .text-content{
+                    text-align: center;
+                    .logo{
+                        padding: 40px 0 30px 0;
+                    }
+                    p{
+                        
+                        font-size: 30px;
+                        font-weight: bold;
+                        color: $grey-dark-background;
+                    }
+
+                }
+            }
+        }
+    }
+}
+
+
