@@ -37,7 +37,7 @@ $store-color: #352a2a;
         color: #fff;
         font-weight: 300;
         font-size: 48px;
-        #h2-bold{
+        .h2-bold{
             display: block;
             font-weight: 400;
         }
@@ -149,6 +149,7 @@ $store-color: #352a2a;
         background-color: rgba($grey-light-background, .5) ;
         width: 480px;
         border-radius: 3px;
+       
         input.search-input {
             font-weight: 300;
             font-size: 16px;
@@ -346,6 +347,9 @@ $store-color: #352a2a;
         padding-top: 40px ;
         padding-bottom: 25px;
     }
+
+
+    
     #section-4{
         .background-content{
             background: $grey-light-background;
@@ -362,6 +366,81 @@ $store-color: #352a2a;
                         color: $grey-dark-background;
                     }
 
+                }
+                
+                .flex{
+                    width:100%; //960px
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: flex-start;
+                    align-items: flex-start;
+                    //flex-grow: 4; videti sa width cotainerom da ima samo 4 ili flex property
+
+                    .single-cart{
+                        width: 240px;
+                        height: 240px;
+                        position: relative;
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: flex-start;
+                        
+                        .hover-text{
+                            display: flex;
+                            flex-direction: column;
+                            justify-content: flex-start;
+                            align-items: flex-start;
+                            width: 240px;
+                            height: 240px;
+                            transition: all .3s ease ;
+
+                            h4{
+                                font-weight: 300;
+                                .h4-bold{
+                                    font-weight: 700;
+                                        
+                                }
+
+                                margin: 28px 28px 130px 28px;
+                                font-size: 18px;
+                                color: #fff;
+                              
+                            }
+                            a{
+                                display: block;
+                                margin: 0 28px;
+                                color: #fff;
+                                text-decoration: none;
+                                i{
+                                    margin-right: 10px;
+                                }
+                            }
+                        }
+                        
+                        
+                        
+
+                        &:hover .hover-text{
+                            transform: translate(0);  // nije mi jasno
+                            background: rgba($primary-color, .85);
+                        }
+
+                        &::before{
+                         content: '';
+                         position: absolute;
+                         top: 0;
+                         left: 0; 
+                         width: 100%;  
+                         z-index: 2;
+                         opacity: 0;
+                        }
+                        img{
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            
+                        }
+                    }
+                    
                 }
             }
         }
