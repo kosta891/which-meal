@@ -299,6 +299,12 @@
   padding-bottom: 84px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
+  /*   .flex.flex-content-2{
+                    .text-inner.inner-2{
+                        //margin-top: 49px;
+                    }
+                    
+                }  */
 }
 
 .main-wrapper #section-2 .text-content .flex-container .flex {

@@ -53,16 +53,20 @@ container.addEventListener('click' , function (e) {
                         textP.classList.remove('active')
                 }
               
-                
+                removingClassOfP(textP)
                 
         } 
 
-      /*   imageWrapper.addEventListener('click', function(){
-                textP.classList.remove('active')
-        }); */
+       
         
 })
 
+function removingClassOfP(pClass) { 
+
+        imageWrapper.addEventListener('click', function () {
+                pClass.classList.remove('active')
+        })
+}
 
 
 
