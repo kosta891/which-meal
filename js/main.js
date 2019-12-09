@@ -45,7 +45,7 @@ container.addEventListener('click' , function (e) {
                 textP = pTag[i]
                 let textContentP = textP.textContent.toLowerCase();
 
-               if(clickedValue === textContentP || textContentP === input ) { //videti za input da se prikaze
+               if(clickedValue === textContentP ) { //videti za input da se prikaze
                        
                        textP.classList.add('active');
                        console.log();
