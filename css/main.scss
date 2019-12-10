@@ -12,7 +12,6 @@ $footer-bgc-color: #3b3b43;
 *{
     margin: 0;
     padding: 0;
-    
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     scroll-behavior: smooth;
@@ -40,7 +39,7 @@ $footer-bgc-color: #3b3b43;
 
     .content{
         //width: 960px; // ovo je sirina u photoshopu
-        margin: 0 15vw;  // treba oko 25vh
+        margin: 0 15vw; 
          
      
     }
@@ -57,7 +56,7 @@ $footer-bgc-color: #3b3b43;
         font-size: 30px;
         font-weight: bold;
         color: $grey-dark-background;
-        text-transform: uppercase;
+        //text-transform: uppercase;
         text-align: center;
     }
     .logo{
@@ -263,11 +262,15 @@ $footer-bgc-color: #3b3b43;
             .flex-container{
                 display: flex;
                 justify-content: space-between;
+                align-items: stretch;
                 padding-bottom: 84px;
                 flex-wrap: nowrap;
                 
+                
                 .flex{
-                    
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
                     width: 240px;
                     text-align: center;
                     .text-inner{
@@ -308,14 +311,7 @@ $footer-bgc-color: #3b3b43;
 
                    
                 }
-                // ne slaze se visina sa ostala dva diva ???
-              /*   .flex.flex-content-2{
-                    .text-inner.inner-2{
-                        //margin-top: 49px;
-                    }
-                    
-                }  */
-                
+              
             }
         }
     }
@@ -409,7 +405,9 @@ $footer-bgc-color: #3b3b43;
   
     #section-4{
         .background-content{
-           
+            h2{
+                text-transform: uppercase;
+            }
             background: $grey-light-background;
             .content{
                 .text-content{
@@ -716,6 +714,9 @@ $footer-bgc-color: #3b3b43;
     text-align: center;
 }
     #section-5{
+        h2{
+            text-transform: uppercase;
+        }
         background-image: url(../img/section-5.jpg);
         background-position: center;
         background-size: cover;

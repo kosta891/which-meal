@@ -70,7 +70,6 @@
   font-size: 30px;
   font-weight: bold;
   color: #5d5d6c;
-  text-transform: uppercase;
   text-align: center;
 }
 
@@ -296,18 +295,25 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
   padding-bottom: 84px;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  /*   .flex.flex-content-2{
-                    .text-inner.inner-2{
-                        //margin-top: 49px;
-                    }
-                    
-                }  */
 }
 
 .main-wrapper #section-2 .text-content .flex-container .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 240px;
   text-align: center;
 }
@@ -457,6 +463,10 @@
 
 .main-wrapper #section-4 .background-content {
   background: #e1e3e7;
+}
+
+.main-wrapper #section-4 .background-content h2 {
+  text-transform: uppercase;
 }
 
 .main-wrapper #section-4 .background-content .content .text-content {
@@ -774,6 +784,10 @@
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+}
+
+.main-wrapper #section-5 h2 {
+  text-transform: uppercase;
 }
 
 .main-wrapper #section-5 .background-content {
