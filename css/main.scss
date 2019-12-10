@@ -1,6 +1,6 @@
 $secondary-color: #ee8899;
 $primary-color: #3a3a3c;
-$grey-dark-background: #5d5d6c;
+$grey-dark-background: #5d5d6c; 
 $grey-light-background: #e1e3e7;
 $text-dark-color: #8e8e98;
 $text-bgc-red-color:#d7b5b4;
@@ -8,6 +8,7 @@ $store-color: #352a2a;
 $p-color: #444446;
 $section-5-bgc-color: #dadce1;
 $footer-bgc-color: #3b3b43;
+$footer-end-color: #35353b;
 
 *{
     margin: 0;
@@ -746,8 +747,11 @@ $footer-bgc-color: #3b3b43;
             background: $footer-bgc-color;
 
             .content{
+                
                 color: $text-dark-color;
                 display: flex;
+                justify-content: flex-start;
+                padding-bottom: 35px;
                 .logo{
                     text-align: left;
                     padding-bottom: 15px;
@@ -788,6 +792,25 @@ $footer-bgc-color: #3b3b43;
                     align-items: flex-start;
                     
                 }
+            }
+        }
+        .footer-info{
+            background-color: $footer-end-color;
+            padding: 0 15vw;
+            
+            p{
+                display: inline-block;
+                font-size: 15px;
+                font-weight: 300;
+                color: $text-dark-color;
+                width: 480px;
+                
+
+            }
+            a{
+                display: inline-block;
+                color: $text-dark-color;
+                text-decoration: none;
             }
         }
     }

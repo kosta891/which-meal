@@ -819,6 +819,10 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding-bottom: 35px;
 }
 
 .main-wrapper footer .background-content .content .logo {
@@ -869,5 +873,24 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+}
+
+.main-wrapper footer .footer-info {
+  background-color: #35353b;
+  padding: 0 15vw;
+}
+
+.main-wrapper footer .footer-info p {
+  display: inline-block;
+  font-size: 15px;
+  font-weight: 300;
+  color: #8e8e98;
+  width: 480px;
+}
+
+.main-wrapper footer .footer-info a {
+  display: inline-block;
+  color: #8e8e98;
+  text-decoration: none;
 }
 /*# sourceMappingURL=main.css.map */
