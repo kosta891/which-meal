@@ -893,4 +893,142 @@
   color: #8e8e98;
   text-decoration: none;
 }
+
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .main-wrapper .top-content .navbar-wrapper {
+    display: block;
+  }
+  .main-wrapper .top-content .navbar-wrapper .logo {
+    display: block;
+    width: 100%;
+    text-align-last: left;
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links {
+    width: 100%;
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease;
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links .icons {
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links .navbar {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links .navbar ul {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links .navbar ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links .navbar ul li a {
+    margin: 0px 0 20px 0;
+    width: 100px;
+  }
+  .main-wrapper .top-content .navbar-wrapper .bars {
+    display: inline-block;
+    position: absolute;
+    top: 220px;
+    right: 40px;
+    width: 30px;
+    cursor: pointer;
+  }
+  .main-wrapper .top-content .navbar-wrapper .bars .bar-1, .main-wrapper .top-content .navbar-wrapper .bars .bar-2, .main-wrapper .top-content .navbar-wrapper .bars .bar-3 {
+    display: block;
+    height: 3px;
+    margin-top: 5px;
+    width: 100%;
+    background-color: #8e8e98;
+    -webkit-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+  }
+  .main-wrapper .top-content .navbar-wrapper .bars.active .bar-1 {
+    -webkit-transform: translate(5px, 9px) rotate(-45deg);
+            transform: translate(5px, 9px) rotate(-45deg);
+  }
+  .main-wrapper .top-content .navbar-wrapper .bars.active .bar-2 {
+    opacity: 0;
+  }
+  .main-wrapper .top-content .navbar-wrapper .bars.active .bar-3 {
+    -webkit-transform: translate(5px, -7px) rotate(45deg);
+            transform: translate(5px, -7px) rotate(45deg);
+  }
+  .main-wrapper .top-content .navbar-wrapper .top-links.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-animation: navbar .3s forwards;
+            animation: navbar .3s forwards;
+  }
+  .main-wrapper #section-3 .image-wrapper .background-image .flex-2 {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@-webkit-keyframes navbar {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+@keyframes navbar {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
+}
+
+/* Small Devices, Tablets */
+/* Extra Small Devices, Phones */
 /*# sourceMappingURL=main.css.map */

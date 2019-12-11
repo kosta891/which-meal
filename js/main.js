@@ -1,6 +1,16 @@
 
 (function(){
-                
+        // navbar click
+        const bars = document.getElementsByClassName('bars')[0]
+        const navbar = document.getElementsByClassName('top-links')[0]
+        console.log(bars, navbar);
+        bars.addEventListener('click', function(){
+
+                bars.classList.toggle('active')
+                navbar.classList.toggle('active')
+        })
+
+
         const form = document.getElementsByClassName('search-form')[0];
         let inputField = document.getElementsByClassName('search-input')[0]
         // vrednost inputa u console log
