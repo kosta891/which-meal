@@ -873,6 +873,12 @@
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.main-wrapper footer .background-content .content .flex-grow ul {
+  padding-right: 20px;
 }
 
 .main-wrapper footer .footer-info {
@@ -895,6 +901,20 @@
 }
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  .main-wrapper .content {
+    width: 960px;
+    margin: 0 auto;
+  }
+  .main-wrapper #section-3 .image-wrapper .background-image {
+    padding: 0;
+  }
+  .main-wrapper #section-3 .image-wrapper .background-image .flex-2 {
+    width: 960px;
+    margin: 0 auto;
+  }
+}
+
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
   .main-wrapper .top-content .navbar-wrapper {
@@ -991,6 +1011,25 @@
     -webkit-animation: navbar .3s forwards;
             animation: navbar .3s forwards;
   }
+  .main-wrapper .content {
+    margin: 0 10vw;
+  }
+  .main-wrapper #section-2 .text-content .flex-container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main-wrapper #section-2 .text-content .flex-container .flex {
+    margin: 0 20px 30px 20px;
+  }
+  .main-wrapper #section-3 .image-wrapper .background-image {
+    padding: 0 10vw;
+  }
   .main-wrapper #section-3 .image-wrapper .background-image .flex-2 {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1000,6 +1039,27 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  .main-wrapper footer .background-content .content {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-wrapper footer .background-content .content .flex-content {
+    width: 48%;
+  }
+  .main-wrapper footer .background-content .content .flex-countries {
+    width: 100%;
+  }
+  .main-wrapper footer .background-content .content .flex-countries .flex-grow {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .main-wrapper footer .background-content .content .flex-countries .flex-grow ul {
+    width: 150px;
+    margin: 0 20px 20px 0;
   }
 }
 
@@ -1030,5 +1090,55 @@
 }
 
 /* Small Devices, Tablets */
+@media only screen and (max-width: 767px) {
+  .main-wrapper .content {
+    margin: 0 5vw;
+  }
+  .main-wrapper .top-content form.search-form {
+    width: 80vw;
+  }
+  .main-wrapper #section-2 .text-content .flex-container .flex {
+    width: 100%;
+  }
+  .main-wrapper #section-3 .image-wrapper .background-image {
+    padding: 0 5vw;
+  }
+  .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content {
+    width: 100%;
+  }
+  .main-wrapper #section-4 .background-content .content .flex {
+    /*  .single-cart{
+                            width: 100%;
+                            .hover-text{
+                                width: 100%;
+                            }
+                            .image-content{
+                               
+                                img{
+                                    width: 100%;
+                                    background-position: center;
+                                }
+                            }
+                        } */
+  }
+  .main-wrapper #section-4 .background-content #map-container .image-wrapper .map-location img {
+    width: 14px;
+    height: 18px;
+  }
+  .main-wrapper #section-5 .background-content .content .flex-2 {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .main-wrapper #section-5 .background-content .content .flex-2 p {
+    width: 100%;
+  }
+  .main-wrapper #section-5 .background-content .content .flex-2 p:nth-child(1) {
+    margin-bottom: 30px;
+  }
+}
+
 /* Extra Small Devices, Phones */
 /*# sourceMappingURL=main.css.map */
