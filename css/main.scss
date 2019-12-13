@@ -864,12 +864,20 @@ $footer-end-color: #35353b;
     .main-wrapper{
         .top-content{
             .navbar-wrapper{
+                
                 display: block;
                 
+                    
+                
                 .logo{
+                    margin: 0;
+                    padding: 0;
                     display: block;
                     width: 100%;
                     text-align-last: left;
+                    img{
+                        width: 100px;
+                    }
                 }
                 .top-links{
                     width: 100%;
@@ -880,7 +888,7 @@ $footer-end-color: #35353b;
                     margin: 0 auto;
                     transition: all .25s ease;
                     .icons{
-                        margin-top: 40px;
+                        margin-top: 30px;
                         margin-bottom: 30px;
                     }
                     .navbar{
@@ -920,8 +928,8 @@ $footer-end-color: #35353b;
                 .bars{
                     display: inline-block;
                     position: absolute;
-                    top: 220px;
-                    right: 40px;
+                    top: 40px;
+                    right: 20px;
                     width:30px;
                     cursor: pointer;
                    
@@ -1055,15 +1063,9 @@ $footer-end-color: #35353b;
         .top-content{
 
             .navbar-wrapper{
-                .logo{
-                    img{
-                        width: 100px;
-                    }
-                }
+              
                 
-                .bars{
-                    top: 140px;
-                }
+               
                 .top-links{
                     .navbar{
                         ul{

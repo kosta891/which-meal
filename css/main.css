@@ -928,9 +928,14 @@
     display: block;
   }
   .main-wrapper .top-content .navbar-wrapper .logo {
+    margin: 0;
+    padding: 0;
     display: block;
     width: 100%;
     text-align-last: left;
+  }
+  .main-wrapper .top-content .navbar-wrapper .logo img {
+    width: 100px;
   }
   .main-wrapper .top-content .navbar-wrapper .top-links {
     width: 100%;
@@ -950,7 +955,7 @@
     transition: all .25s ease;
   }
   .main-wrapper .top-content .navbar-wrapper .top-links .icons {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-bottom: 30px;
   }
   .main-wrapper .top-content .navbar-wrapper .top-links .navbar {
@@ -1010,8 +1015,8 @@
   .main-wrapper .top-content .navbar-wrapper .bars {
     display: inline-block;
     position: absolute;
-    top: 220px;
-    right: 40px;
+    top: 40px;
+    right: 20px;
     width: 30px;
     cursor: pointer;
   }
@@ -1150,12 +1155,6 @@
 @media only screen and (max-width: 767px) {
   .main-wrapper .content {
     margin: 0 5vw;
-  }
-  .main-wrapper .top-content .navbar-wrapper .logo img {
-    width: 100px;
-  }
-  .main-wrapper .top-content .navbar-wrapper .bars {
-    top: 140px;
   }
   .main-wrapper .top-content .navbar-wrapper .top-links .navbar ul li a {
     width: 100%;
