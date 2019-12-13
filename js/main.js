@@ -3,11 +3,14 @@
         // navbar click
         const bars = document.getElementsByClassName('bars')[0]
         const navbar = document.getElementsByClassName('top-links')[0]
-        console.log(bars, navbar);
+        
+        
         bars.addEventListener('click', function(){
 
                 bars.classList.toggle('active')
                 navbar.classList.toggle('active')
+  
+                
         })
 
 
@@ -17,7 +20,7 @@
         form.addEventListener('submit', function (e) {
                 e.preventDefault()
                 let input = inputField.value;
-                if(input === ''){
+                if(input === '' ){
                         alert('Please fill input field properly')
                 }
                 console.log(input);
