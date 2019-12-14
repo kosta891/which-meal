@@ -154,7 +154,6 @@ $footer-end-color: #35353b;
                             margin-top: 8px; 
                             background-color: $secondary-color;
                             transform: scale(0, 0);
-                            //transform-origin: left;  //videti sta je lepse
                             transition: transform ease .3s;
 
                             
@@ -208,7 +207,7 @@ $footer-end-color: #35353b;
           
         }
         input[type='submit'] {
-            background-color:rgba($grey-light-background, 0) ;  //nece rgbA
+            background-color:rgba($grey-light-background, 0) ;  
             color: #fff;
             line-height: 2;
             font-size: 16px;
@@ -419,7 +418,7 @@ $footer-end-color: #35353b;
                 }
                 
                 .flex{
-                    width:100%; //960px
+                    width:100%; 
                     display: flex;
                     flex-wrap: wrap;
                     justify-content: center;
