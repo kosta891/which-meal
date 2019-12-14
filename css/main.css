@@ -1172,24 +1172,13 @@
   .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content {
     width: 100%;
   }
-  .main-wrapper #section-4 .background-content .content .flex {
-    /*  .single-cart{
-                            width: 100%;
-                            .hover-text{
-                                width: 100%;
-                            }
-                            .image-content{
-                               
-                                img{
-                                    width: 100%;
-                                    background-position: center;
-                                }
-                            }
-                        } */
-  }
   .main-wrapper #section-4 .background-content #map-container .image-wrapper .map-location img {
     width: 14px;
     height: 18px;
+  }
+  .main-wrapper #section-4 .background-content #map-container .image-wrapper .map-location img:hover {
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   .main-wrapper #section-5 .background-content .content .flex-2 {
     -webkit-box-orient: vertical;
@@ -1225,6 +1214,27 @@
   }
   .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content .store-btn .app-btn .store:nth-child(2) {
     margin: 0;
+  }
+  .main-wrapper #section-4 .background-content .content .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .main-wrapper #section-4 .background-content .content .flex .single-cart {
+    width: 100%;
+    overflow: hidden;
+  }
+  .main-wrapper #section-4 .background-content .content .flex .single-cart .hover-text {
+    width: 100%;
+  }
+  .main-wrapper #section-4 .background-content .content .flex .single-cart .image-content img {
+    width: 100%;
+  }
+  .main-wrapper footer .background-content .content .flex-countries .flex-grow ul {
+    width: 100px;
   }
 }
 /*# sourceMappingURL=main.css.map */

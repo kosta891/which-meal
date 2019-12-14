@@ -486,8 +486,7 @@ $footer-end-color: #35353b;
                 
             }
             #map-container{
-                //width: 100%;
-                //margin: 0 50px;
+                
                 margin-top: 60px;
                 
                 .image-wrapper{
@@ -502,14 +501,13 @@ $footer-end-color: #35353b;
                     img{
                         width: 100%;
                         position: relative;
-                        
-                        //height: 500px;
+                 
                     }
                    
                 }
 
                 .map-location{
-                    //display: inline;
+                    
                     position: absolute;
                     transition: .25s ease;
                                   
@@ -1113,31 +1111,17 @@ $footer-end-color: #35353b;
         }  
         #section-4{
             .background-content{
-                .content{
-                    .flex {
-                        //flex-direction: column;
-                       /*  .single-cart{
-                            width: 100%;
-                            .hover-text{
-                                width: 100%;
-                            }
-                            .image-content{
-                               
-                                img{
-                                    width: 100%;
-                                    background-position: center;
-                                }
-                            }
-                        } */
-                        
-                    }
-                }
+                
                 #map-container {
                     .image-wrapper{
                         .map-location{
                             img{
                                 width: 14px;
                                 height: 18px;
+                                
+                            }
+                            img:hover{
+                                transform: scale(.95);
                             }
                         }
                     }
@@ -1188,5 +1172,30 @@ $footer-end-color: #35353b;
             margin: 0;
         }
         
+    }
+    .main-wrapper #section-4 .background-content .content{
+        .flex {
+            flex-direction: column;
+            flex-wrap: nowrap;
+             .single-cart{
+                width: 100%;
+                overflow: hidden;
+                .hover-text{
+                    width: 100%;
+                }
+                .image-content{
+                   
+                    img{
+                        width:  100%;
+                        //background-position: center;
+                        
+                    }
+                }
+            } 
+            
+        }
+    }
+    .main-wrapper footer .background-content .content .flex-countries .flex-grow ul{
+        width: 100px;
     }
 }
