@@ -912,7 +912,7 @@ $footer-end-color: #35353b;
                                     width: 200px;
                                     font-size: 16px;
                                     &:hover, &:focus{
-                                        color:$secondary-color;
+                                        color: darken($primary-color, 15%)
                                     }
 
                                 }
