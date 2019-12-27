@@ -39,7 +39,7 @@ $footer-end-color: #35353b;
     } 
 
     .content{
-        //width: 960px; // ovo je sirina u photoshopu
+        
         margin: 0 15vw; 
          
      
@@ -86,9 +86,6 @@ $footer-end-color: #35353b;
     
     .top-content{
         padding-top: 20px;
-    
-    
-    
 
     .navbar-wrapper{
         display: flex;
@@ -219,11 +216,7 @@ $footer-end-color: #35353b;
                 transition: all .25s ease;
             }
         }
-       
-
-        
-      
-        
+  
     }
     
 }
@@ -348,7 +341,9 @@ $footer-end-color: #35353b;
                     .store-btn{
                         .app-btn{
                             display: flex;
+                            flex-direction: row;
                             justify-content: flex-start;
+                            flex-wrap: nowrap;
                             .store{
                                 display: flex;
                                 justify-content: flex-start;
@@ -356,7 +351,10 @@ $footer-end-color: #35353b;
                                 flex-wrap: nowrap;
                                 width: 170px;
                                 height: 60px;
-                                margin-right: 30px;
+                                &:nth-child(1){
+                                    margin-right: 30px;
+                                }
+                                
                                 background-color: $store-color;
                                 border-radius: 4px;
                                 text-decoration: none;
@@ -368,8 +366,7 @@ $footer-end-color: #35353b;
                                 
                                 }
                                 .store-content{
-           
-                                    
+
                                     p{
                                         font-size: 12px;
                                         color: #fff;
@@ -387,10 +384,7 @@ $footer-end-color: #35353b;
                         display: flex;
                         justify-content: flex-end;
                         align-items: flex-end;
-                        
-                        
 
-                   
                     }
                 }
             }
@@ -1010,8 +1004,7 @@ $footer-end-color: #35353b;
                             
                         }
                     }
-                   
-                    
+    
                 }
             }
             .footer{
@@ -1048,6 +1041,9 @@ $footer-end-color: #35353b;
         transform: translateX(0) rotateY(0deg);
     }
 }
+
+
+
 /* Small Devices, Tablets */
 @media only screen and (max-width: 767px) {
     
@@ -1060,9 +1056,7 @@ $footer-end-color: #35353b;
         .top-content{
 
             .navbar-wrapper{
-              
-                
-               
+      
                 .top-links{
                     .navbar{
                         ul{
@@ -1099,10 +1093,14 @@ $footer-end-color: #35353b;
                 .background-image{
                     padding: 0 5vw;
                     .flex-2{
-                        
+                         
                         .text-content{
                             width: 100%;
-                            
+                            .store-btn .app-btn{
+                                flex-direction: row;
+                                flex-wrap: nowrap;
+                               
+                            }
                         }
                     }
                 }
@@ -1158,16 +1156,40 @@ $footer-end-color: #35353b;
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-   
+   .main-wrapper .top-content form.search-form{
+       
+       input.search-input{
+           width: 85%;
+       }
+   }
     .main-wrapper #section-2 .text-content .flex-container .flex{
         margin: 0 0 30px 0;
     }
-    .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content .store-btn .app-btn .store{
-        margin-right: 5px;
-        &:nth-child(2){
-            margin: 0;
-        }
+  
+    .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content .store-btn{
+       
+        .app-btn{
+            flex-direction: column;
         
+        .store{
+            margin-bottom: 15px;
+        }
+
+    }
+    } 
+    .main-wrapper #section-4 .background-content #map-container .image-wrapper .map-location{
+        
+        img{
+            width: 12px;
+            height: 14px;
+            pointer-events:none;
+        }
+      .map-pin{
+            p{
+                font-size: 10px;
+                padding-top: 5px;
+            }
+        }
     }
     .main-wrapper #section-4 .background-content .content{
         .flex {
