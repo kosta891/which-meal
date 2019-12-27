@@ -968,7 +968,7 @@ $footer-end-color: #35353b;
                 .flex-container{
                     flex-wrap: wrap;
                     justify-content: center;
-                    align-items: center;
+                    align-items: stretch;
                     .flex{
                         margin: 0 20px 30px 20px;
 
@@ -1159,9 +1159,6 @@ $footer-end-color: #35353b;
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
    
-    .main-wrapper #section-4 .background-content #map-container{
-        display: none;
-    }
     .main-wrapper #section-2 .text-content .flex-container .flex{
         margin: 0 0 30px 0;
     }
@@ -1186,8 +1183,7 @@ $footer-end-color: #35353b;
                    
                     img{
                         width:  100%;
-                        //background-position: center;
-                        
+                  
                     }
                 }
             } 
