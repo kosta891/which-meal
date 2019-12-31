@@ -91,14 +91,14 @@
 .main-wrapper .h2-span {
   margin-bottom: 60px;
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 48px;
   text-align: left;
 }
 
 .main-wrapper .h2-span .h2-bold {
   display: block;
-  font-weight: 400;
+  font-weight: 700;
 }
 
 .main-wrapper .top-content {
@@ -332,7 +332,6 @@
 
 .main-wrapper #section-2 .text-content .flex-container .flex .text-inner p {
   font-size: 18px;
-  padding: 0 20px;
 }
 
 .main-wrapper #section-2 .text-content .flex-container .flex .button {
@@ -447,10 +446,12 @@
 .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content .store-btn .app-btn .store .store-content p {
   font-size: 12px;
   color: #fff;
+  font-weight: 400;
 }
 
-.main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content .store-btn .app-btn .store .store-content h3 {
-  font-size: 20px;
+.main-wrapper #section-3 .image-wrapper .background-image .flex-2 .text-content .store-btn .app-btn .store .store-content h4 {
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .main-wrapper #section-3 .image-wrapper .background-image .flex-2 .mobile-wrapper {
@@ -516,11 +517,12 @@
 .main-wrapper #section-4 .background-content .content .flex .single-cart .hover-text {
   width: 240px;
   height: 240px;
+  letter-spacing: 0px;
 }
 
 .main-wrapper #section-4 .background-content .content .flex .single-cart .hover-text h4 {
-  font-weight: 300;
-  margin: 28px 28px 130px 28px;
+  font-weight: 400;
+  margin: 26px 26px 125px 26px;
   font-size: 18px;
   color: #fff;
 }
@@ -531,7 +533,7 @@
 
 .main-wrapper #section-4 .background-content .content .flex .single-cart .hover-text a {
   display: block;
-  margin: 0 28px;
+  margin: 0 0 26px 26px;
   color: #fff;
   text-decoration: none;
 }

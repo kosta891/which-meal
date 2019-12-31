@@ -74,12 +74,12 @@ $footer-end-color: #35353b;
     .h2-span{
         margin-bottom: 60px;
         color: #fff;
-        font-weight: 300;
+        font-weight: 400;
         font-size: 48px;
         text-align: left;
         .h2-bold{
             display: block;
-            font-weight: 400;
+            font-weight: 700;
         }
        
     }
@@ -156,7 +156,7 @@ $footer-end-color: #35353b;
                             
                         }
                         &:hover{
-                            color: lighten($primary-color, 20%)
+                            color: lighten($primary-color, 20%);
                         }
                         &:hover::after{
                             
@@ -275,7 +275,7 @@ $footer-end-color: #35353b;
                         }
                         p{
                             font-size: 18px;
-                            padding: 0 20px;
+                           
                         }
                     }
                     .button{
@@ -366,13 +366,16 @@ $footer-end-color: #35353b;
                                 
                                 }
                                 .store-content{
-
+                                    
                                     p{
                                         font-size: 12px;
                                         color: #fff;
+                                        font-weight: 400;
+                                        
                                     }
-                                    h3{
-                                        font-size: 20px;
+                                    h4{
+                                        font-size: 16px;
+                                        font-weight: 400;
                                         
                                     }
                                 }
@@ -430,22 +433,23 @@ $footer-end-color: #35353b;
                         .hover-text{
                             width: 240px;
                             height: 240px;
+                            letter-spacing: 0px;
                             h4{
                                 
-                                font-weight: 300;
+                                font-weight: 400;
                                 .h4-bold{
                                     font-weight: 700;
                                         
                                 }
 
-                                margin: 28px 28px 130px 28px;
+                                margin: 26px 26px 125px 26px;
                                 font-size: 18px;
                                 color: #fff;
                               
                             }
                             a{
                                 display: block;
-                                margin: 0 28px;
+                                margin: 0 0 26px 26px;
                                 color: #fff;
                                 text-decoration: none;
                                 i{
